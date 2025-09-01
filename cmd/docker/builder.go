@@ -20,7 +20,7 @@ import (
 const (
 	builderDefaultPlugin = "buildx"
 	buildxMissingWarning = `DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
-            Install the buildx component to build images with BuildKit:
+            Install the docker-buildx package to build images with BuildKit:
             https://docs.docker.com/go/buildx/`
 
 	buildkitDisabledWarning = `DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
@@ -28,11 +28,11 @@ const (
             environment-variable.`
 
 	buildxMissingError = `ERROR: BuildKit is enabled but the buildx component is missing or broken.
-       Install the buildx component to build images with BuildKit:
+       Install the docker-buildx package to build images with BuildKit:
        https://docs.docker.com/go/buildx/`
 
 	bakeMissingError = `ERROR: docker bake requires the buildx component but it is missing or broken.
-       Install the buildx component to use bake:
+       Install the docker-buildx package to use bake:
        https://docs.docker.com/go/buildx/`
 )
 
